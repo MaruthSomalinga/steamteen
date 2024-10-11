@@ -1,0 +1,34 @@
+@import style.css
+
+body {
+  width: 100%;
+  position: relative;
+}
+
+
+.jumbotron {
+  margin-top: 12vw;
+  margin-left: 12vw;
+  padding-bottom: 12vw;
+}
+
+.jumbotron h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 5.5vw;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .jumbotron {
+      font-size: 2vw;
+  }
+
+  body {
+    width: 100%;
+    position: relative;
+  }

@@ -1,0 +1,405 @@
+@import 'style.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600&display=swap');
+
+/* html, body {
+  overflow-y: scroll;
+}
+ */
+h1, h2, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.jumbotron {
+  padding-bottom: 19vw;
+}
+.first-home {
+  background-image: url(switch_img/img8.png);
+}
+
+.steam__section h3 {
+  font-size: 4vw;
+  letter-spacing: 2.5px;
+}
+
+
+.steam__section p {
+  font-size: 1.6vw;
+  font-family: 'Montserrat', sans-serif;
+  width: 40%;
+  margin-left: 0;
+}
+
+.meet__container {
+  width: 45%;
+  background-color: #fff;
+  position: relative;
+  padding: 2vw;
+}
+
+.meet__container .filler__img {
+  position: absolute;
+  width: 17vw;
+  height: 17vw;
+  border-radius: 50%;
+  background-color: darkgrey;
+  top: -6vw;
+  object-fit: cover;
+}
+
+.meet__container h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5vw;
+  margin-left: 46%;
+  margin-bottom: 0;
+  margin-top: 1.2vw;
+}
+
+.meet__container p {
+  width: 51%;
+  margin-left: 46%;
+  font-size: 1.3vw;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 1vw;
+}
+
+.meet__container .socials__container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 75%;
+  width: 9vw;
+  left: 8.5%;
+}
+
+.youtube {
+  width: 1.8vw;
+}
+
+.twitter {
+  width: 1.8vw;
+}
+
+.instagram {
+  width: 1.8vw;
+}
+
+.socials {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: darkgrey;
+  margin: 0.8vw;
+  border-radius: 50%;
+}
+
+.meet__container button {
+  position: absolute;
+  top: 55%;
+  left: 16%;
+  font-family: 'Monteserrat', sans-serif;
+  font-size: 1.3vw;
+  font-weight: 400;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  color: #fff;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.meet__container button:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+  transition: 0.4s;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.description-text {
+  margin-left: 8%;
+}
+
+.meet__container {
+  position: absolute;
+  left: 47.5%;
+  top: 25%;
+}
+
+.steam__section1 {
+  margin-top: 0%;
+}
+
+.steam__section { 
+  position: relative;
+  height: 100%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.swiper {
+  margin-top: 10vh;
+  height: 90vh;
+  width: 150vh;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  transform: translateY(10%);
+  display: flex;
+  justify-content: center;
+  width: 16vw;
+  height: 25vw;
+  border-radius: 7px;
+}
+
+
+.swiper-slide .card {
+  width: 16vw;
+  height: 26.8vw;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  transition: 0.4s;
+}
+
+.swiper-slide-active .card {
+  transform: scale(1.3);
+  transition: 0.4s;
+}
+
+.color-block {
+  width: 100%;
+  height: 30%;
+}
+
+.card h5 {
+  font-size: 1.3vw;
+  font-weight: 600;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  margin-top: 1vw;
+  margin-bottom: 0.2vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card p {
+  font-size: 0.95vw;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  line-height: 1.08;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.5vw;
+}
+
+.scroll-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9vw;
+  padding: 0.5vw 1.1vw;
+  border-radius: 7px;
+}
+
+.link-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1400px) {
+
+  .swiper {
+    height: 85vh;
+  }
+  
+}
+
+@media screen and (max-width: 1000px) {
+
+  .swiper {
+    height: 75vh;
+  }
+
+  .swiper-slide .card {
+    height: 28vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .swiper {
+    height: 65vh;
+  }
+  
+}
+
+@media screen and (max-width: 660px) {
+
+  .swiper {
+    height: 85vh;
+  }
+  
+}
+
+.green-bg {
+  background-color: #8dc63fff;
+}
+
+.green-border {
+  border: 8px solid #689628;
+}
+
+.orange-bg {
+  background-color: #f7941eff;
+}
+
+.orange-border {
+  border: 8px solid #d28120;
+}
+
+.yellow-bg {
+  background-color: #ffc809ff;
+}
+
+.yellow-border {
+  border: 8px solid #e6bd30;
+}
+
+.red-bg {
+  background-color: #ef3e3eff;
+}
+
+.red-border {
+  border: 8px solid #aa1c1c;
+}
+
+.blue-bg {
+  background-color: #008dd2ff;
+}
+
+.blue-border {
+  border: 8px solid #086b9c;
+}
+
+@media only screen and (max-width: 1500px) {
+
+  .swiper {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .swiper-slide .card {
+    width: 25vw;
+    height: 23vw;
+  }
+
+  .swiper {
+    height: 35vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .swiper-slide .card p {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.5vw;
+    margin-top: 0.6vh;
+  }
+
+  .swiper-slide .card h5 {
+    font-size: 1.6vw;
+    margin-bottom: 0;
+    margin-left: 1vw;
+  }
+
+  .scroll-link {
+    padding: 1vw 2vw;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+  }
+
+  .jumbotron {
+    margin-bottom: 5vh;
+  }
+
+  .steam__section p {
+    width: 90%;
+    font-size: 3vw
+  }
+
+
+  .steam__section h3 {
+    font-size: 6vw;
+  }
+
+  .meet__container {
+    width: 82%;
+    left: 8%;
+    top: 47%;
+  }
+
+  .long-bottom {
+    margin-bottom: 70%;
+    margin-left: 0;
+  }
+
+  .meet__container h3 {
+    margin-left: 37%;
+    margin-top: 5%;
+    font-size: 7vw;
+  }
+
+  .meet__container .filler__img {
+    top: 2vw;
+    border-width: 4px;
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .meet__container p {
+    margin-left: 37%;
+    margin-top: 1%;
+    width: 60%;
+    font-size: 2.8vw;
+  }
+
+  .meet__container button {
+    left: 8.5%;
+    font-size: 3vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+  }
+
+  .instagram, .twitter {
+    width: 3.5vw;
+  }
+
+  .youtube {
+    width: 3.8vw;
+  }
+
+  .socials {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .meet__container .socials__container {
+    top: 76%;
+    left: 5%;
+  }
+  
+}

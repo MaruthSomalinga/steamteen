@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Form | STEAMTEEN</title>
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <link rel="shortcut icon" href="favicon/green.png">
+        <style>
+              .layout {
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-height: auto;
+                height: auto;
+                margin-top: 80px;
+                width: auto;
+                max-width: 100%;
+              }
+
+              .content-wrapper {
+                background-color: rgba(150, 150, 150, 1);
+                display: flex;
+                margin-top: 87px;
+                width: 1200%;
+                gap: 20px;
+                justify-content: space-between;
+                height: 200px;
+                min-height: 211px;
+                max-width: 100%;
+              }
+
+              @media (max-width: 991px) {
+                .content-wrapper {
+                  max-width: 100%;
+                  flex-wrap: wrap;
+                  margin-top: 40px;
+                }
+              }
+
+              .sidebar-left {
+                background-color: rgba(236, 236, 236, 1);
+                width: 100%;
+                height: 100%;
+                min-height: 100%;
+                max-width: 67px;
+              }
+
+              @media (max-width: 991px) {
+                .sidebar-left {
+                  display: none;
+                }
+              }
+
+              .sidebar-left-inner {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-left: 23.5px;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 1);
+                max-width: 20px;
+                min-height: 211px;
+              }
+
+              .main-content {
+                align-self: start;
+                display: flex;
+                margin-top: -82px;
+                flex-direction: column;
+                width: auto;
+                height: 100%;
+                min-height: 489px;
+              }
+
+              @media (max-width: 991px) {
+                .main-content {
+                  max-width: 100%;
+                }
+              }
+
+              .profile-image-container {
+                background-color: rgba(236, 236, 236, 1);
+                border-radius: 50%;
+                align-self: center;
+                z-index: 10;
+                width: 250px;
+                aspect-ratio: 1;
+                padding-bottom: 30px;
+                max-width: 250px;
+                min-height: 200px;
+                margin: 60px 350px 0;
+              }
+
+              .profile-image-wrapper {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                min-height: 0;
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+              }
+
+              .profile-image-section {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                min-height: 150px;
+                width: 100%;
+                height: 100%;
+                max-width: 1200px;
+                padding: 20px;
+                align-self: stretch;
+                flex-grow: 1;
+                margin-left: auto;
+                margin-right: auto;
+              }
+
+              .profile-image {
+                aspect-ratio: 1.08;
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                min-height: 150px;
+                min-width: 20px;
+                overflow: visible;
+                max-width: 186px;
+                height: 100%;
+                margin: 10px 0 0 0px;
+              }
+
+              .sidebar-right {
+                background-color: rgba(236, 236, 236, 1);
+                width: 100%;
+                min-height: 100%;
+                height: 100%;
+                max-width: 67px;
+              }
+
+              @media (max-width: 991px) {
+                .sidebar-right {
+                  display: none;
+                }
+              }
+
+              .sidebar-right-inner {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-left: 23.5px;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 1);
+                max-width: 20px;
+                min-height: 211px;
+              }
+
+              .visually-hidden {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap;
+                border: 0;
+              }
+              </style>
+    </head>
+    <body>
+      <div class="first-home preloadImg scroll-child">
+        <div class="nav-wrap">
+          <nav>  
+            <div class="logo">
+              <h4 class="title-logo"><a href="index.html">STEAMTEEN</a></h4>
+            </div>
+            <ul class="nav__links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="tracks.html">Tracks</a></li>
+              <li><a href="conferences.html">Conferences</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+               <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+            <!--burger menu-->
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Jumbotron over image -->
+        <div class="jumbotron">
+            <br>
+            <br>
+          <h1 class = "jobapplicationheader">Job Application <br> Page <br> 
+            <br>  
+          </h1>
+        </div>
+      </div>
+      <style>
+          body {
+              font-family: Bebas Neue, sans-serif;
+              background-color: #FFFFFF;
+              margin: 0;
+              padding: 0;
+          }
+
+
+
+          .job-modals {
+              display: flex;
+              justify-content: space-around;
+              flex-wrap: wrap;
+              margin: 40px 0;
+              padding: 20px;
+          }
+
+          .gearimg1 {
+            width: 250 px;
+            height: 250 px;
+            position: absolute;
+            bottom: 1150px;
+            right: 1200px;
+            
+          }
+
+          .gearimg2 {
+              width: 250 px;
+              height: 250 px;
+              position: absolute;
+              bottom: 1150px;
+              right: 890px;
+
+            }
+          .gifone {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            bottom: 850px;
+            right: 100px;
+            animation: float 4s ease-in-out infinite;
+            background-color: white;
+            
+          }
+
+          .giftwo {
+              width: 200px;
+              height: 200px;
+              position: absolute;
+              bottom: 850px;
+              left: 100px;
+              animation: float 4s ease-in-out infinite;
+              background-color: white;
+            }
+          
+          .gifthree {
+            width: 250px;
+            height: 200px;
+            position: absolute;
+            bottom: 400px;
+            left: 100px;
+            animation: float 4s ease-in-out infinite;
+          }
+
+          .giffour {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            bottom: 400px;
+            right: 100px;
+            animation: float 4s ease-in-out infinite;
+          }
+
+          
+            
+          @keyframes float {
+            0% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-20px);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+
+          .response-message {
+              color: green;
+              font-weight: bold;
+              margin-top: 20px;
+          }
+
+          .job-modal {
+              background-color: white;
+              color: white;
+              border-radius: 15px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              padding: 20px;
+              width: 200px;
+              height: 200px;
+              text-align: center;
+              cursor: pointer;
+              animation: float 3s ease-in-out infinite;
+              transition: transform 0.3s ease;
+              margin: 10px;
+          }
+
+          .job-modal h3 {
+              margin: 0 0 10px;
+              font-size: 20px;
+              color: #333; /*333*/
+          }
+
+          .job-modal p {
+              font-size: 14px;
+              color: #fff; /*666*/
+              font-weight: bold;
+          }
+
+          .job-modal:hover {
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+              transform: translateY(-10px);
+          }
+
+          .job-modal.intern {
+              background-color: #ef3e3e; 
+          }
+
+          .job-modal.monitor {
+              background-color: #008dd2; 
+          }
+
+          .job-modal.secretary {
+              background-color: #8dc63f; 
+          }
+
+          .job-modal.speaker {
+              background-color: #ffb040; 
+          }
+
+          .job-modal.treasurer {
+              background-color: #ffcd29;
+          }
+
+          @keyframes float {
+              0%, 100% {
+                  transform: translateY(0);
+              }
+              50% {
+                  transform: translateY(-15px);
+              }
+          }
+
+          .container {
+              background-color: #ffffff;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              max-width: 600px;
+              padding: 30px;
+              margin: 40px auto;
+        
+          }
+
+          .container h2 {
+              text-align: center;
+              color: #333333;
+              margin-bottom: 20px;
+          }
+
+          .form-group {
+              margin-bottom: 15px;
+          }
+
+          .form-group label {
+              display: block;
+              color: #555555;
+              margin-bottom: 5px;
+          }
+
+          .form-group input,
+          .form-group select,
+          .form-group textarea {
+              width: calc(100% - 10px);
+              padding: 10px;
+              border: 5 solid #cccccc;
+              border-radius: 4px;
+              font-size: 14px;
+          }
+
+          .form-group textarea {
+              resize: vertical;
+              height: 100px;
+          }
+
+          .form-group button {
+              width: 100%;
+              padding: 12px;
+              border: none;
+              border-radius: 4px;
+              background-color: #4CAF50;
+              color: white;
+              font-size: 16px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+          }
+
+          .form-group button:hover {
+              background-color: #45a049;
+          }
+
+          .form-group input[type="file"] {
+              padding: 3px;
+          }
+
+          /* Media Queries */
+          @media (max-width: 1200px) {
+              .jumbotron h1 {
+                  font-size: 32px;
+              }
+
+              .job-modals {
+                  flex-direction: column;
+                  align-items: center;
+              }
+
+              .job-modal {
+                  width: 60%;
+                  margin: 15px 0;
+              }
+
+              .container {
+                  padding: 20px;
+                  margin: 20px auto;
+              }
+          }
+
+          @media (max-width: 768px) {
+              .jumbotron {
+                  padding: 30px 15px;
+              }
+
+              .job-modal {
+                  width: 80%;
+                  margin: 15px auto;
+              }
+
+              .container {
+                  padding: 15px;
+                  margin: 10px auto;
+              }
+
+              .jumbotron h1 {
+                  font-size: 28px;
+              }
+          }
+
+          @media (max-width: 480px) {
+              .jumbotron {
+                  padding: 20px 10px;
+              }
+
+              .job-modal {
+                  width: 90%;
+                  margin: 10px auto;
+              }
+
+              .container {
+                  padding: 10px;
+                  margin: 10px auto;
+              }
+
+              .jumbotron h1 {
+                  font-size: 24px;
+              }
+          }
+
+          @media (max-width: 991px) {
+            .gifone {
+                display: none;
+            }
+
+            .giftwo {
+                display: none;
+            }
+
+            .gifthree {
+                display: none;
+            }
+
+            .giffour {
+                display: none;
+            }
+      </style>
+      <body>
+
+        </div>
+
+        <div class="job-modals">
+            <div class="job-modal intern" data-job="intern">
+                <h1>Intern</h1>
+                <p>Assist in various tasks, engage in STEAMTEEN conferences, and gain experience. Hourly wage is $20</p>
+            </div>
+            <div class="job-modal monitor" data-job="monitor">
+                <h1>Monitor</h1>
+                <p>Oversee sessions, take action over innapropriate behavior, and help manage events. Hourly wage is $18.</p>
+            </div>
+            <div class="job-modal secretary" data-job="secretary">
+                <h1>Secretary</h1>
+                <p>Manage communications, organize schedules, and delegate tasks. Hourly wage is $25.</p>
+            </div>
+            <div class="job-modal speaker" data-job="speaker">
+                <h1>Speaker</h1>
+                <p>Present talks, engage with the audience, and provide feedback to questions. Hourly wage is $22.</p>
+            </div>
+            <div class="job-modal treasurer" data-job="treasurer">
+                <h1>Treasurer</h1>
+                <p>Handle financial tasks, create resonable budgets, and manage payrolls. Hourly wage is $25.<p>
+            </div>
+        </div>
+        <br>
+        <br>
+
+          
+          <!-- Gray GIF Gap -->
+          <section class="layout">
+            <div class="content-wrapper">
+              <aside class="sidebar-left">
+                <div class="sidebar-left-inner"></div>
+              </aside>
+              <main class="main-content">
+                <div class="profile-image-container">
+                  <div class="profile-image-wrapper">
+                    <section class="profile-image-section">
+                      <img loading="lazy" src="https://cdn.builder.io/o/assets%2Fb6e626ecc91d46778ca30d0fa07d951c%2Ff141eee8d6264bb3811ca60efb674d61%2Fcompressed?apiKey=b6e626ecc91d46778ca30d0fa07d951c&token=f141eee8d6264bb3811ca60efb674d61&alt=media&optimized=true" class="profile-image" alt="Profile image" />
+                    </section>
+                  </div>
+                </div>
+              </main>
+              <aside class="sidebar-right">
+                <div class="sidebar-right-inner"></div>
+              </aside>
+            </div>
+          </section>
+
+          <script>
+          (() => {
+            const state = {};
+            let context = null;
+            let nodesToDestroy = [];
+            let pendingUpdate = false;
+
+            function destroyAnyNodes() {
+              nodesToDestroy.forEach((el) => el.remove());
+              nodesToDestroy = [];
+            }
+
+            function update() {
+              if (pendingUpdate === true) {
+                return;
+              }
+              pendingUpdate = true;
+              document.querySelectorAll("[data-el='div-1']").forEach((el) => {
+                el.setAttribute("maxWidth", 1200);
+                el.setAttribute("lazyLoad", false);
+              });
+              destroyAnyNodes();
+              pendingUpdate = false;
+            }
+
+            update();
+          })();
+          </script>
+          <br>
+          <br>  
+          <br>
+          <br>
+          <br>
+        <div class="container" id="application-form">
+            <h1><center>Job Application Form</center></h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+              <div class="form-group">
+                <label for="phone number">Phone Number:</label>
+                <input type="phone number" id="phone number" name="phone number" required>
+              </div>                  
+                <div class="form-group">
+                    <label for="job">Job Position:</label>
+                    <select id="job" name="job" required>
+                        <option value="intern">Intern</option>
+                        <option value="monitor">Monitor</option>
+                        <option value="secretary">Secretary</option>
+                        <option value="speaker">Speaker</option>
+                        <option value="treasurer">Treasurer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="resume">Resume:</label>
+                    <input type="file" id="resume" name="resume" required>
+                </div>
+                <div class="form-group">
+                    <label for="cover-letter">Why do you want to join STEAMTEEN?:</label>
+                    <textarea id="cover-letter"
+                            <textarea id="Response" name="Response required" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit">Submit Application</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <script>
+                                document.querySelectorAll('.job-modal').forEach(modal => {
+                                    modal.addEventListener('click', () => {
+                                        const job = modal.getAttribute('data-job');
+                                        document.getElementById('job').value = job;
+                                        document.getElementById('application-form').scrollIntoView({ behavior: 'smooth' });
+                                    });
+                                });
+                            </script>
+                        </body>
+            
+        
+        <!-- gifs -->
+         <img src="images/giffour (2).png" style="background-image: none;" alt="TopRight GIF" class="gifone">
+        <img src="images/giftwo.png" alt="TopLeft GIF" class="giftwo">
+        <img src="images/giffour.png" alt="BottomLeft GIF" class="gifthree">
+        <img src="images/gifthree.png" alt="BottomRight GIF" class="giffour">
+        <!-- formcompletionmessage -->
+         <div id="responseMessage" class="response-message"></div>
+        <script>
+            document.getElementById('applicationForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // Handle form submission here
+
+                // Display response message
+                var responseMessage = document.getElementById('responseMessage');
+                responseMessage.textContent = 'Your application has been received, thank you!';
+            });
+        </script>
+         <style>
+                    body {
+                        margin: 0;
+                        font-family: Arial, sans-serif;
+                    }
+                    .footer {
+                        background-color: #232f3e;
+                        color: #fff;
+                        padding: 20px 0;
+                        font-size: 14px;
+                        line-height: 1.6;
+                        text-align: center;
+                    }
+                    .footer-content {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 0 20px;
+                    }
+                    .footer-section {
+                        flex: 1;
+                        max-width: 250px;
+                        margin-bottom: 20px;
+                        text-align: center; /* Center align the content within each footer section */
+                    }
+                    .footer-section h3 {
+                        color: #b0b0b0;
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+                    .footer-section ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center; /* Center align the list items within each footer section */
+                    }
+                    .footer-section ul li {
+                        margin-bottom: 8px;
+                    }
+                    .footer-section ul li a {
+                        color: #b0b0b0;
+                        text-decoration: none;
+                        transition: color 0.3s;
+                    }
+                    .footer-section ul li a:hover {
+                        color: #fff;
+                    }
+                    .footer-bottom {
+                        margin-top: 20px;
+                        padding-top: 10px;
+                        border-top: 1px solid #44505c;
+                        text-align: center; /* Center align the content in the footer bottom */
+                    }
+                    .footer-bottom p {
+                        margin: 5px 0;
+                    }
+                    .footer-bottom p a {
+                        color: #b0b0b0;
+                        text-decoration: none;
+                        transition: color 0.3s;
+                    }
+                    .footer-bottom p a:hover {
+                        color: #fff;
+                    }
+                    .social-icons {
+                        margin-top: 10px;
+                        text-align: center; /* Center align the social icons */
+                    }
+                    .social-icons a {
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        background-color: #44505c;
+                        color: #fff;
+                        font-size: 18px;
+                        text-align: center;
+                        line-height: 30px;
+                        border-radius: 5
+                          \
+                          0%;
+                        margin: 0 5px;
+                        transition: background-color 0.3s;
+                    }
+                    .social-icons a:hover {
+                        background-color: #007bff;
+                    }
+                </style>
+
+                    </head>
+                    <body>
+
+                    <div class="footer">
+                        <div class="footer-content">
+                            <div class="footer-section">
+                                <h3>Get to Know Us</h3>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="tracks.html">Tracks</a </li>
+                                    <li><a href="conferences.html">Conferences</a></li>
+                                    <li><a href="faqs.html">FAQS</a></li>
+                                    <li><a href="jobs.html">Jobs</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-section">
+                                <h3>Connect with Us</h3>
+                                <ul>
+                                    <li><a href="https://www.youtube.com/@steamteen123">Youtube</a></li>
+                                    <li><a href="https://x.com/steamteen2022">Twitter</a></li>
+                                    <li><a href="https://www.instagram.com/steamteenct/?img_index=1">Instagram</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-section">
+                                <h3>Want to work?</h3>
+                                <ul>
+                                    <li><a href="jobs.html">Job Offerings</a></li>
+                                    <li><a href="tracks.html">Past Experiences</a></li>
+                                    <li><a href="jobs.html">Super Secret Quiz</a></li>
+                                    <li><a href="conferences.html">Upcoming Conference</a></li>
+                                    <li><a href="tracks.html">Past Speakers</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-section">
+                                <h3>Let Us Help You</h3>
+                                <ul>
+                                    <li><a href="faqs.html">FAQs</a></li>
+                                    <li><a href="https://forms.gle/pmcD11qN6R671yYF7">Registration</a></li>
+                                    <li><a href="tracks.html">Tracks</a></li>
+                                    <li><a href="index.html">Past Conferences</a></li>
+                                    <li><a href="documentation.html">Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p>&copy; <span id="currentYear"></span> STEAMTEEN. All rights reserved.</p>
+                            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+                            <div class="social-icons">
+                                <a href="#" target="_blank">f</a>
+                                <a href="#" target="_blank">t</a>
+                                <a href="#" target="_blank">i</a>
+                            </div>
+                        </div>
+                    </div>
+                    </body>
+                    </html>
+
+                    <script src="js/script.js"></script>
+                  </body>
+        </html>

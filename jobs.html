@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home | STEAMTEEN</title>
+    <link href="css/jobs.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="favicon/green.png">
+
+    <style>
+      .page-section {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: auto;
+        height: auto;
+        margin-top: 40px;
+        width: auto;
+        max-width: 100%;
+      }
+
+      .content-wrapper {
+        background-color: #8dc63f; 
+        display: flex;
+        margin-top: 40px;
+        width: 100%;
+        max-width: 100%;
+        gap: 20px;
+        justify-content: space-between;
+        min-height: 600px;
+      }
+
+      @media (max-width: 991px) {
+        .content-wrapper {
+          max-width: 100%;
+          flex-wrap: wrap;
+          margin-top: 40px;
+        }
+      }
+
+      .left-sidebar {
+        background-color: #c6e39f; 
+        width: 100%;
+        max-width: 67px;
+        height: 100%;
+        min-height: 2050px;
+      }
+
+      @media (max-width: 991px) {
+        .left-sidebar {
+          display: none;
+        }
+      }
+
+      .sidebar-line {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: 23.5px;
+        height: 100%;
+        width: 20px;
+        background-color: #fff;
+        min-height: 2050px;
+      }
+
+      .main-content {
+        align-self: start;
+        display: flex;
+        margin-top: -82px;
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+        min-height: 900px;
+      }
+
+      @media (max-width: 991px) {
+        .main-content {
+          width: 100%;
+        }
+      }
+
+      .profile-circle {
+        background-color: #b5e770; 
+        border-radius: 50%;
+        align-self: center;
+        z-index: 0;
+        width: 224px;
+        height: 230px;
+        margin: 50px 350px 0;
+      }
+
+      .profile-image-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 100px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        overflow: hidden;
+      }
+
+      .profile-image-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 100px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        align-self: stretch;
+        flex-grow: 1;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .profile-image {
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: center;
+        width: 140px;
+        height: 140px;
+        overflow: hidden;
+        margin: 0px 0 0 5px;
+      }
+
+      .content-area {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        width: 1200px;
+        min-height: 600px;
+        height: 100%;
+        margin-top: -50px;
+        padding-top: 100px;
+      }
+
+      @media (max-width: 991px) {
+        .content-area {
+          max-width: 100%;
+        }
+      }
+
+      .right-sidebar {
+        background-color: #c6e39f; 
+        width: 100%;
+        max-width: 67px;
+        height: 100%;
+        min-height: 2050px;
+      }
+
+      @media (max-width: 991px) {
+        .right-sidebar {
+          display: none;
+        }
+      }
+
+      .sidebar-line-right {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: 23.5px;
+        height: 100%;
+        width: 20px;
+        background-color: #fff;
+        min-height: 2050px;
+      }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      </style>
+  </head>
+  <body>
+    <div class="first-home preloadImg scroll-child">
+      <div class="nav-wrap">
+        <nav>  
+          <div class="logo">
+            <h4 class="title-logo"><a href="index.html">STEAMTEEN</a></h4>
+          </div>
+          <ul class="nav__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="tracks.html">Tracks</a></li>
+            <li><a href="conferences.html">Conferences</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+             <li><a href="jobs.html">Jobs</a></li>
+          </ul>
+          <!--burger menu-->
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </div>
+      
+      <!-- Jumbotron over image -->
+      <div class="jumbotron">
+        <h1>Apply For A <br> Position With Us!</h1>
+        <button class="sign-up green-bg" id="signup1" onclick="location.href='form.html'">
+          Apply
+        </button>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <!-- Embedded HTML for Background design -->
+    <section class="page-section">
+      <div class="content-wrapper">
+        <aside class="left-sidebar">
+          <div class="sidebar-line"></div>
+        </aside>
+        <main class="main-content">
+          <div class="profile-circle">
+            <div class="profile-image-container">
+              <div class="profile-image-wrapper">
+                <img loading="lazy" src="https://cdn.builder.io/o/assets%2Fb6e626ecc91d46778ca30d0fa07d951c%2Fc4a7939f37da479ca18c1c1d7f9d410f%2Fcompressed?apiKey=b6e626ecc91d46778ca30d0fa07d951c&token=c4a7939f37da479ca18c1c1d7f9d410f&alt=media&optimized=true" class="profile-image" alt="Profile image" />
+              </div>
+            </div>
+          </div>
+          <div class="content-area">
+            <!-- About section -->
+                <div class="about-section scroll-child reveal">    
+                  <h2 class="subheader reveal">What We Are Looking For</h2>
+                  <p class="reveal">Here at STEAMTEEN, we are looking for applicants that demonstrate great love and respect for all STEAM-related fields. Applicants should be excited to learn and grow all while mentoring teenagers that are interested in following in their footsteps. Does this sound like you? <a href ="form.html" >Apply now!</a></p>
+
+                </div>
+
+                <!-- Tab Box - STEAM --> 
+                <div class="centered-tabs scroll-child reveal">
+                  <div class="steam__tabs">
+                    <div class="steam__tabs__head">
+                      <span class="steam__tabs__toggle is-active science__span reveal">Interns</span>
+                      <span class="steam__tabs__toggle tech__span reveal">Monitors</span>
+                      <span class="steam__tabs__toggle eng__span reveal">Secretary</span>
+                      <span class="steam__tabs__toggle art__span reveal">Speakers</span>
+                      <span class="steam__tabs__toggle math__span reveal">Treasurer</span>
+                    </div>
+                    <div class="steam__tabs__body reveal">
+                      <div class="steam__tabs__content science__tab is-active">
+                        <h2 class="steam__tab__title reveal">Interns</h2>
+                        <p class="steam__tab__text reveal"> Join us at STEAMTEEN, where we're dedicated to inspiring the next generation of innovators through virtual conferences focused on STEAM subjects. We're excited to offer an internship opportunity that contributes to our mission in unique and impactful ways.
+            <br>
+            <br>
+                          <strong>STEAM Curriculum Development Internship:</strong>
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Collaborate on creating engaging lesson plans, workshops, and digital resources.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Use STEAM concepts to make learning interesting for students of all ages.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Conduct research and gather resources.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Contribute creative ideas to shape the future of STEAM education.
+
+
+  
+            </p>
+                        <a href="form.html"   class="reveal"><button>Apply Here</button></a>
+                      </div>
+                      <div class="steam__tabs__content tech__tab">
+                        <h2 class="steam__tab__title">Monitors</h2>
+                        <p class="steam__tab__text"><strong>Virtual Conference</strong>
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Oversee technical aspects of virtual conferences, ensuring a seamless experience for participants.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Manage participant engagement, including Q&A sessions.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Troubleshoot technical glitches and address any issues that arise during the event.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Proactive and quick problem-solving skills are essential.
+                        <br>
+                        </p>
+
+                        <a href="form.html"><button>Apply Here</button></a>
+                      </div>
+                      <div class="steam__tabs__content eng__tab">
+                        <h2 class="steam__tab__title">Secretary</h2>
+                        <p class="steam__tab__text">
+                          <strong>➡</strong>Be the heart of STEAMTEEN operations, facilitating communication and coordination.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Maintain accurate meeting records, handle correspondence, and assist in event planning/execution.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Utilize meticulous organization and communication skills to keep the team informed and connected.
+                        <br>
+                        <br>
+                        </p>
+                        <a href="form.html" ><button>Apply Here</button></a>
+                      </div>
+                      <div class="steam__tabs__content art__tab">
+                        <h2 class="steam__tab__title">Speakers</h2>
+                        <p class="steam__tab__text">
+                          <strong>➡</strong>Share groundbreaking findings or current projects in a specific STEM field.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Deliver a captivating talk to ignite passion for STEM in attendees and be open to new thoughts and ideas from others.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Provide in-depth knowledge and insights on a particular STEM topic.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Moderate panels, workshops, or Q&A sessions to foster engagement.
+                          <br>
+                          <br>
+
+                          <strong>➡</strong>Discuss career opportunities and experiences within STEM fields.
+                          </p>
+                        <a href="form.html" ><button>Apply Here</button></a>
+                      </div>
+                      <div class="steam__tabs__content math__tab">
+                        <h2 class="steam__tab__title">Treasurer</h2>
+                        <p class="steam__tab__text">
+                           <strong>➡</strong>Manage budgets and track expenses for STEAMTEEN.
+                          <br>
+                          <br>
+
+                           <strong>➡</strong>Develop financial strategies to support STEAM education initiatives and determine budgets for future STEAM showcases and events.
+                          <br>
+                          <br>
+
+                           <strong>➡</strong>Ensure the financial health and stability of the organization.
+                          <br>
+                          <br>
+
+                           <strong>➡</strong>Contribute to the sustainability of STEAMTEEN's programs.</p>
+                        <a href="form.html" ><button>Apply Here</button></a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <script src="js/jobs.js"></script>
+          </div>
+        </main>
+        <aside class="right-sidebar">
+          <div class="sidebar-line-right"></div>
+        </aside>
+      </div>
+    </section>
+  </body>
+
+ <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .footer {
+                background-color: #232f3e;
+                color: #fff;
+                padding: 20px 0;
+                font-size: 14px;
+                line-height: 1.6;
+                text-align: center;
+            }
+            .footer-content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            .footer-section {
+                flex: 1;
+                max-width: 250px;
+                margin-bottom: 20px;
+                text-align: center; /* Center align the content within each footer section */
+            }
+            .footer-section h3 {
+                color: #b0b0b0;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .footer-section ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                text-align: center; /* Center align the list items within each footer section */
+            }
+            .footer-section ul li {
+                margin-bottom: 8px;
+            }
+            .footer-section ul li a {
+                color: #b0b0b0;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            .footer-section ul li a:hover {
+                color: #fff;
+            }
+            .footer-bottom {
+                margin-top: 20px;
+                padding-top: 10px;
+                border-top: 1px solid #44505c;
+                text-align: center; /* Center align the content in the footer bottom */
+            }
+            .footer-bottom p {
+                margin: 5px 0;
+            }
+            .footer-bottom p a {
+                color: #b0b0b0;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            .footer-bottom p a:hover {
+                color: #fff;
+            }
+            .social-icons {
+                margin-top: 10px;
+                text-align: center; /* Center align the social icons */
+            }
+            .social-icons a {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background-color: #44505c;
+                color: #fff;
+                font-size: 18px;
+                text-align: center;
+                line-height: 30px;
+                border-radius: 5
+                  \
+                  0%;
+                margin: 0 5px;
+                transition: background-color 0.3s;
+            }
+            .social-icons a:hover {
+                background-color: #007bff;
+            }
+        </style>
+
+            </head>
+            <body>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Get to Know Us</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="tracks.html">Tracks</a </li>
+                            <li><a href="conferences.html">Conferences</a></li>
+                            <li><a href="faqs.html">FAQS</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Connect with Us</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/@steamteen123">Youtube</a></li>
+                            <li><a href="https://x.com/steamteen2022">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/steamteenct/?img_index=1">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Want to work?</h3>
+                        <ul>
+                            <li><a href="jobs.html">Job Offerings</a></li>
+                            <li><a href="tracks.html">Past Experiences</a></li>
+                            <li><a href="jobs.html">Super Secret Quiz</a></li>
+                            <li><a href="conferences.html">Upcoming Conference</a></li>
+                            <li><a href="tracks.html">Past Speakers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Let Us Help You</h3>
+                        <ul>
+                            <li><a href="faqs.html">FAQs</a></li>
+                            <li><a href="https://forms.gle/pmcD11qN6R671yYF7">Registration</a></li>
+                            <li><a href="tracks.html">Tracks</a></li>
+                            <li><a href="index.html">Past Conferences</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; <span id="currentYear"></span> STEAMTEEN. All rights reserved.</p>
+                    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank">f</a>
+                        <a href="#" target="_blank">t</a>
+                        <a href="#" target="_blank">i</a>
+                    </div>
+                </div>
+            </div>
+            </body>
+            </html>
+
+            <script src="js/script.js"></script>
+          </body>
+</html>
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home | STEAMTEEN</title>
+    <link href="css/jobs.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="favicon/green.png">
+  </head>
+  <body>
+    <div class="first-home preloadImg scroll-child">
+      <div class="nav-wrap">
+        <nav>  
+          <div class="logo">
+            <h4 class="title-logo"><a href="index.html">STEAMTEEN</a></h4>
+          </div>
+          <ul class="nav__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="tracks.html">Tracks</a></li>
+            <li><a href="conferences.html">Conferences</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+             <li><a href="jobs.html">Jobs</a></li>
+          </ul>
+          <!--burger menu--> 
+<!--          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Jumbotron over image -->
+<!--      <div class="jumbotron">
+        <h1>Apply For A <br> Position With Us!</h1>
+        <button class="sign-up green-bg" id="signup1"><a style="text-decoration:none; color:white;" href="form.html" target="_blank">Apply</a></button>
+      </div>
+    </div>
+
+    <!-- About section -->
+<!--    <div class="about-section scroll-child reveal">    
+      <h2 class="subheader reveal">What We Are Looking For</h2>
+      <p class="reveal">Here at STEAMTEEN, we are looking for applicants that demonstrate great love and respect for all STEAM-related fields. Applicants should be excited to learn and grow all while mentoring teenagers that are interested in following in their footsteps. Does this sound like you? <a href ="form.html"target=”_blank” >Apply now!</a></p>
+
+    </div>
+
+    <!-- Tab Box - STEAM --> 
+<!--    <div class="centered-tabs scroll-child reveal">
+      <div class="steam__tabs">
+        <div class="steam__tabs__head">
+          <span class="steam__tabs__toggle is-active science__span reveal">Interns</span>
+          <span class="steam__tabs__toggle tech__span reveal">Monitors</span>
+          <span class="steam__tabs__toggle eng__span reveal">Secretary</span>
+          <span class="steam__tabs__toggle art__span reveal">Speakers</span>
+          <span class="steam__tabs__toggle math__span reveal">Treasurer</span>
+        </div>
+        <div class="steam__tabs__body reveal">
+          <div class="steam__tabs__content science__tab is-active">
+            <h2 class="steam__tab__title reveal">Interns</h2>
+            <p class="steam__tab__text reveal"> Join us at STEAMTEEN, where we're dedicated to inspiring the next generation of innovators through virtual conferences focused on STEAM subjects. We're excited to offer an internship opportunity that encompasses three distinct roles, each contributing to our mission in unique and impactful ways.
+<br>
+<br>
+              <strong>1.) STEAM Curriculum Development Internship:</strong>
+              <br>
+              <br>
+
+              <strong>➡</strong>Collaborate on creating engaging lesson plans, workshops, and digital resources.
+              <br>
+              <br>
+
+              <strong>➡</strong>Use STEAM concepts to make learning interesting for students of all ages.
+              <br>
+              <br>
+
+              <strong>➡</strong>Conduct research and gather resources.
+              <br>
+              <br>
+
+              <strong>➡</strong>Contribute creative ideas to shape the future of STEAM education.
+
+
+<br>
+<br>
+              <strong>2.) Virtual Event Coordination Internship:</strong>
+              <br>
+              <br>
+
+              <strong>➡</strong>Assist with coordinating virtual conferences, gaining event planning/management experience.
+              <br>
+              <br>
+
+              <strong>➡</strong>Manage registrations, curate content, and engage with participants.
+              <br>
+              <br>
+
+              <strong>➡</strong>Develop project management, communication, and digital event technology skills.
+<br>
+<br>
+              <strong>3.) Social Media Internship:</strong>
+              <br>
+              <br>
+
+              <strong>➡</strong>Monitor virtual conference platform for technical glitches and attendee concerns.
+              <br>
+              <br>
+
+              <strong>➡</strong>Manage participant engagement (Q&A, chat, polls).
+              <br>
+              <br>
+
+              <strong>➡</strong>Proactively troubleshoot and resolve technical issues.
+              <br>
+              <br>
+
+</p>
+            <a href="form.html"target=”_blank”   class="reveal"><button>Apply Here</button></a>
+          </div>
+          <div class="steam__tabs__content tech__tab">
+            <h2 class="steam__tab__title">Monitors</h2>
+            <p class="steam__tab__text"><strong>Virtual Conference</strong>
+              <br>
+              <br>
+
+              <strong>➡</strong>Oversee technical aspects of virtual conferences, ensuring a seamless experience for participants.
+              <br>
+              <br>
+
+              <strong>➡</strong>Manage participant engagement, including Q&A sessions.
+              <br>
+              <br>
+
+              <strong>➡</strong>Troubleshoot technical glitches and address any issues that arise during the event.
+              <br>
+              <br>
+
+              <strong>➡</strong>Proactive and quick problem-solving skills are essential.
+            <br>
+            </p>
+
+            <a href="form.html"target=”_blank” ><button>Apply Here</button></a>
+          </div>
+          <div class="steam__tabs__content eng__tab">
+            <h2 class="steam__tab__title">Secretary</h2>
+            <p class="steam__tab__text">
+              <strong>➡</strong>Be the heart of STEAMTEEN operations, facilitating communication and coordination.
+              <br>
+              <br>
+
+              <strong>➡</strong>Maintain accurate meeting records, handle correspondence, and assist in event planning/execution.
+              <br>
+              <br>
+
+              <strong>➡</strong>Utilize meticulous organization and communication skills to keep the team informed and connected.
+            <br>
+            <br>
+            </p>
+            <a href="form.html"target=”_blank” ><button>Apply Here</button></a>
+          </div>
+          <div class="steam__tabs__content art__tab">
+            <h2 class="steam__tab__title">Speakers</h2>
+            <p class="steam__tab__text">
+              <strong>➡</strong>Share groundbreaking findings or current projects in a specific STEM field.
+              <br>
+              <br>
+
+              <strong>➡</strong>Deliver a captivating talk to ignite passion for STEM in attendees.
+              <br>
+              <br>
+
+              <strong>➡</strong>Provide in-depth knowledge and insights on a particular STEM topic.
+              <br>
+              <br>
+
+              <strong>➡</strong>Moderate panels, workshops, or Q&A sessions to foster engagement.
+              <br>
+              <br>
+
+              <strong>➡</strong>Discuss career opportunities and experiences within STEM fields.
+              </p>
+            <a href="form.html"target=”_blank” ><button>Apply Here</button></a>
+          </div>
+          <div class="steam__tabs__content math__tab">
+            <h2 class="steam__tab__title">Treasurer</h2>
+            <p class="steam__tab__text">
+               <strong>➡</strong>Manage budgets and track expenses for STEAMTEEN.
+              <br>
+              <br>
+
+               <strong>➡</strong>Develop financial strategies to support STEAM education initiatives.
+              <br>
+              <br>
+
+               <strong>➡</strong>Ensure the financial health and stability of the organization.
+              <br>
+              <br>
+
+               <strong>➡</strong>Contribute to the sustainability of STEAMTEEN's programs.</p>
+            <a href="form.html"target=”_blank” ><button>Apply Here</button></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+    <script src="js/jobs.js"></script>
+  </body>
+
+
+</html>
+-->

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width">
+     <title>About | STEAMTEEN</title>
+     <link href="css/about.css" rel="stylesheet" type="text/css" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="apple-mobile-web-app-capable" content="yes" />
+     <link rel="shortcut icon" href="favicon/orange.png">
+
+     <style>
+       .page-section {
+         background-color: #fff;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         min-height: auto;
+         height: auto;
+         margin-top: 40px;
+         width: auto;
+         max-width: 100%;
+       }
+
+       .content-wrapper {
+         background-color: #ffb040;
+         display: flex;
+         margin-top: 40px;
+         width: 100%;
+         max-width: 100%;
+         gap: 20px;
+         justify-content: space-between;
+         min-height: 600px;
+       }
+
+       @media (max-width: 991px) {
+         .content-wrapper {
+           max-width: 100%;
+           flex-wrap: wrap;
+           margin-top: 40px;
+         }
+       }
+
+       .left-sidebar {
+         background-color: #ffd79f;
+         width: 100%;
+         max-width: 67px;
+         height: 100%;
+         min-height: 2200px;
+       }
+
+       @media (max-width: 991px) {
+         .left-sidebar {
+           display: none;
+         }
+       }
+
+       .sidebar-line {
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         margin-left: 23.5px;
+         height: 100%;
+         width: 20px;
+         background-color: #fff;
+         min-height: 2200px;
+       }
+
+       .main-content {
+         align-self: start;
+         display: flex;
+         margin-top: -82px;
+         flex-direction: column;
+         width: auto;
+         height: 100%;
+         min-height: 900px;
+       }
+
+       @media (max-width: 991px) {
+         .main-content {
+           width: 100%;
+         }
+       }
+
+       .profile-circle {
+         background-color: #fdc372;
+         border-radius: 50%;
+         align-self: center;
+         z-index: 0;
+         width: 224px;
+         height: 230px;
+         margin: 50px 350px 0;
+       }
+
+       .profile-image-container {
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         min-height: 100px;
+         width: 100%;
+         height: 100%;
+         padding: 20px;
+         overflow: hidden;
+       }
+
+       .profile-image-wrapper {
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         min-height: 100px;
+         width: 100%;
+         height: 100%;
+         padding: 20px;
+         align-self: stretch;
+         flex-grow: 1;
+         max-width: 1200px;
+         margin: 0 auto;
+       }
+
+       .profile-image {
+         aspect-ratio: 1;
+         object-fit: cover;
+         object-position: center;
+         width: 140px;
+         height: 140px;
+         overflow: hidden;
+         margin: 0px 0 0 5px;
+       }
+
+       .content-area {
+         background-color: #fff;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         max-width: 1300px;
+         width: 1300px;
+         min-height: 600px;
+         height: 100%;
+         margin-top: -50px;
+         padding-top: 100px;
+       }
+
+       @media (max-width: 991px) {
+         .content-area {
+           max-width: 100%;
+         }
+       }
+
+       .right-sidebar {
+         background-color: #ffd79f;
+         width: 100%;
+         max-width: 67px;
+         height: 100%;
+         min-height: 2200px;
+       }
+
+       @media (max-width: 991px) {
+         .right-sidebar {
+           display: none;
+         }
+       }
+
+       .sidebar-line-right {
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         margin-left: 23.5px;
+         height: 100%;
+         width: 20px;
+         background-color: #fff;
+         min-height: 2200px;
+       }
+
+       .visually-hidden {
+         position: absolute;
+         width: 1px;
+         height: 1px;
+         padding: 0;
+         margin: -1px;
+         overflow: hidden;
+         clip: rect(0, 0, 0, 0);
+         white-space: nowrap;
+         border: 0;
+       }
+       </style>
+   </head>
+   <body>
+
+     <div class="first-home preloadImg">
+       <div class="nav-wrap">
+         <nav> 
+           <div class="logo">
+             <h4 class="title-logo"><a href="index.html">SteamTeen</a></h4>
+           </div>
+           <ul class="nav__links">
+             <li><a href="about.html">About</a></li>
+             <li><a href="tracks.html">Tracks</a></li>
+             <li><a href="conferences.html">Conferences</a></li>
+             <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+           </ul>
+           <!--burger menu-->
+           <div class="burger">
+             <div class="line1"></div>
+             <div class="line2"></div>
+             <div class="line3"></div>
+           </div>
+         </nav>
+       </div>
+
+       <!-- Jumbotron over image -->
+       <div class="jumbotron">
+         <h1>About SteamTeen</h1>
+         <button class="sign-up orange-bg" id="signup1">Sign Up</button>
+       </div>
+     </div>
+
+     <!-- Embedded HTML for Background design -->
+     <section class="page-section">
+       <div class="content-wrapper">
+         <aside class="left-sidebar">
+           <div class="sidebar-line"></div>
+         </aside>
+         <main class="main-content">
+           <div class="profile-circle">
+             <div class="profile-image-container">
+               <div class="profile-image-wrapper">
+                 <img loading="lazy" src="https://cdn.builder.io/api/v1/file/assets%2Fb6e626ecc91d46778ca30d0fa07d951c%2F6371e163821041aa818c121ab1b97ef3" class="profile-image" alt="Profile image" />
+               </div>
+             </div>
+           </div>
+           <div class="content-area">
+             <div class="about-section reveal">    
+                <h2 class="subheader">What is STEAMTEEN?</h2>
+                <p>STEAMTEEN is a national conference dedicated to exposing teenagers to STEAM fields. We primarily cater to teenagers ages 13-18, but anyone is welcome to register and attend a conference! While we do accept donations, our conferences are 100% free for <strong>ALL</strong> participants. The only things that are required in order to be fully immersed in the events are internet connection, access to <a class="click-link" href="https://zoom.us"target=”_blank” >Zoom</a>, and a passion for learning! This year, our 2024 virtual conference will be held on Zoom from July 6th to July 8th. Visit our sign up page or <a href="https://forms.gle/s4JLKDJJFRYZUhuy5"target=”_blank”  class="click-link">click here</a> to register!</p>
+                <br>
+                <br>
+                 <style>
+                    .image-container {
+                      width: 100%;
+                      max-width: 1300px;
+                      margin-top: 20px;
+                      overflow: visible;
+                    }
+
+                    .responsive-image {
+                      aspect-ratio: 2.29; /*2.29*/
+                      object-fit: cover;
+                      object-position: center;
+                      width: 100%;
+                      max-width: 1300px;
+                      height: 500px;
+                      min-height: 20px;
+                      overflow: visible;
+                    }
+
+                    @media (max-width: 991px) {
+                    .image-container {
+                       display: none;
+                    }
+
+                    .responsive-image {
+                        display: none;
+                    }
+                    </style>
+
+                    <section class="image-container">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets%2Fb6e626ecc91d46778ca30d0fa07d951c%2F21b0b3a1735943fa8e076c8900d51936" class="responsive-image" alt="Description of the image" />
+                    </section>
+               
+               
+
+               
+                <!-- <section class="hero-section">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets%2Fb6e626ecc91d46778ca30d0fa07d951c%2F21b0b3a1735943fa8e076c8900d51936" class="hero-image" alt="Hero background image" />
+                </section>
+                <style>
+                  .hero-image {
+                    aspect-ratio: 2.22;
+                    object-fit: cover; 
+                    object-position: center; 
+                    width: 100%; 
+                    margin-top: 0px;
+                    min-height: 400px;
+                    /*min-width: 20px; /*20px*/
+                    overflow: visible; 
+                    max-width: 100%; /*1200*/
+                    height: 100%; /*100%*/
+
+                  }
+                  </style>  -->
+                <br>
+                <h2 class="subheadertwo">Want to Work at STEAMTEEN?</h2>
+                <p>At STEAMTEEN, we offer a unique opportunity to be at the forefront of empowering teenagers. Joining our team means becoming part of a passionate community dedicated to inspiring the next generation of thinkers, creators, and leaders. Whether you're driven by a love for education, technology, or making a meaningful impact in young lives, STEAMTEEN provides a platform for you to contribute your skills and expertise towards a noble cause.</p>
+                <br>
+                <center>
+                <p class="jobs"><strong>Check out our current available jobs here!</a></strong></p>
+                </center>
+                <center>
+                  <button class="sign-up orange-bg" id="signup1"><a  href="/jobs.html" style="text-decoration:none; color:white;" >Available Jobs</a></button>
+
+                </center>
+                <style>
+                  @media (max-width: 991px)
+                  .sign-up orange-bg {
+                    font-size: 6.5vw;
+                  }
+               </style>
+                <br>
+           </div>
+         </main>
+         <aside class="right-sidebar">
+           <div class="sidebar-line-right"></div>
+         </aside>
+       </div>
+     </section>
+
+     <div class="about_testimony_container">
+       <div class="testimony_section red-bg">
+         <p class="reveal"><strong>Taylor J. '23</strong></p>
+         <p class="reveal">"In 2023, I attended STEAMTEEN. It is by far the best STEAM conference I have ever attended! There are so many activities that can be completed, and getting the opportunity to meet new people is a plus!"</p>
+       </div>
+       <div class="testimony_section blue-bg">
+         <p class="reveal"><strong>Terrence M. '22</strong></p>
+         <p class="reveal">"STEAMTEEN was so much fun! I learned so much about different fields and met a bunch of people interested in the same field that I’m interested in. I can’t wait to go again next year!"</p>
+       </div>
+       <div class="testimony_section yellow-bg">
+         <p class="reveal"><strong>Jamie U. '21</strong></p>
+         <p class="reveal">"STEAMTEEN was such a fun and engaging experience. It was fascinating to discover STEAM fields that I have never heard about before. I definitely reccommend checking the conference out!"</p>
+       </div>
+       <div class="testimony_section green-bg">
+         <p class="reveal"><strong>Layla F. '23</strong></p>
+         <p class="reveal">"STEAMTEEN was one of the most fun and useful experiences I've ever had. It gave me helpful lessons to use in the future! I plan on going to the next conference and encourage everyone else to go!"</p>
+       </div>
+     </div>
+
+     <div id="signUpModal1" class="modal modal5">
+       <div class="modal-content">
+         <div class="modal-header orange-bg">
+           <span class="closeBtn" id="closeBtn20">&times;</span>
+           <h4>Sign Up | STEAMTEEN 2024</h4>
+         </div>
+         <div class="modal-body">
+           <iframe src="https://forms.gle/s1eoW8zbHazYDuNa9" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+         </div>
+       </div>
+     </div>
+
+      <script src="js/about.js"></script>
+   </body>
+    <style>
+               body {
+                   margin: 0;
+                   font-family: Arial, sans-serif;
+               }
+               .footer {
+                   background-color: #232f3e;
+                   color: #fff;
+                   padding: 20px 0;
+                   font-size: 14px;
+                   line-height: 1.6;
+                   text-align: center;
+               }
+               .footer-content {
+                   display: flex;
+                   flex-wrap: wrap;
+                   justify-content: space-between;
+                   max-width: 1200px;
+                   margin: 0 auto;
+                   padding: 0 20px;
+               }
+               .footer-section {
+                   flex: 1;
+                   max-width: 250px;
+                   margin-bottom: 20px;
+                   text-align: center; /* Center align the content within each footer section */
+               }
+               .footer-section h3 {
+                   color: #b0b0b0;
+                   font-size: 16px;
+                   margin-bottom: 10px;
+               }
+               .footer-section ul {
+                   list-style-type: none;
+                   padding: 0;
+                   margin: 0;
+                   text-align: center; /* Center align the list items within each footer section */
+               }
+               .footer-section ul li {
+                   margin-bottom: 8px;
+               }
+               .footer-section ul li a {
+                   color: #b0b0b0;
+                   text-decoration: none;
+                   transition: color 0.3s;
+               }
+               .footer-section ul li a:hover {
+                   color: #fff;
+               }
+               .footer-bottom {
+                   margin-top: 20px;
+                   padding-top: 10px;
+                   border-top: 1px solid #44505c;
+                   text-align: center; /* Center align the content in the footer bottom */
+               }
+               .footer-bottom p {
+                   margin: 5px 0;
+               }
+               .footer-bottom p a {
+                   color: #b0b0b0;
+                   text-decoration: none;
+                   transition: color 0.3s;
+               }
+               .footer-bottom p a:hover {
+                   color: #fff;
+               }
+               .social-icons {
+                   margin-top: 10px;
+                   text-align: center; /* Center align the social icons */
+               }
+               .social-icons a {
+                   display: inline-block;
+                   width: 30px;
+                   height: 30px;
+                   background-color: #44505c;
+                   color: #fff;
+                   font-size: 18px;
+                   text-align: center;
+                   line-height: 30px;
+                   border-radius: 5
+                     \
+                     0%;
+                   margin: 0 5px;
+                   transition: background-color 0.3s;
+               }
+               .social-icons a:hover {
+                   background-color: #007bff;
+               }
+           </style>
+
+               </head>
+               <body>
+
+               <div class="footer">
+                   <div class="footer-content">
+                       <div class="footer-section">
+                           <h3>Get to Know Us</h3>
+                           <ul>
+                               <li><a href="about.html">About Us</a></li>
+                               <li><a href="tracks.html">Tracks</a </li>
+                               <li><a href="conferences.html">Conferences</a></li>
+                               <li><a href="faqs.html">FAQS</a></li>
+                               <li><a href="jobs.html">Jobs</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-section">
+                           <h3>Connect with Us</h3>
+                           <ul>
+                               <li><a href="https://www.youtube.com/@steamteen123">Youtube</a></li>
+                               <li><a href="https://x.com/steamteen2022">Twitter</a></li>
+                               <li><a href="https://www.instagram.com/steamteenct/?img_index=1">Instagram</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-section">
+                           <h3>Want to work?</h3>
+                           <ul>
+                               <li><a href="jobs.html">Job Offerings</a></li>
+                               <li><a href="tracks.html">Past Experiences</a></li>
+                               <li><a href="jobs.html">Super Secret Quiz</a></li>
+                               <li><a href="conferences.html">Upcoming Conference</a></li>
+                               <li><a href="tracks.html">Past Speakers</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-section">
+                           <h3>Let Us Help You</h3>
+                           <ul>
+                               <li><a href="faqs.html">FAQs</a></li>
+                               <li><a href="https://forms.gle/pmcD11qN6R671yYF7">Registration</a></li>
+                               <li><a href="tracks.html">Tracks</a></li>
+                               <li><a href="index.html">Past Conferences</a></li>
+                               <li><a href="documentation.html">Documentation</a></li>
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="footer-bottom">
+                       <p>&copy; <span id="currentYear"></span> STEAMTEEN. All rights reserved.</p>
+                       <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+                       <div class="social-icons">
+                           <a href="#" target="_blank">f</a>
+                           <a href="#" target="_blank">t</a>
+                           <a href="#" target="_blank">i</a>
+                       </div>
+                   </div>
+               </div>
+               </body>
+               </html>
+
+               <script src="js/script.js"></script>
+             </body>
+   </html>

@@ -1,0 +1,125 @@
+@import "style.css";
+
+.first-home {
+  background-image: url(switch_img/mangivingspeech.png);
+}
+
+.about-section {
+  width: 74%;
+  margin-left: 0vw;
+  margin-top: 2vh;
+  margin-bottom: 8vh;
+}
+
+.about-section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 4vw;
+}
+
+.about-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+  margin-left: 0;
+}
+
+.quote-section {
+  width: 74%;
+  margin-left: 13vw;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
+.quote-section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 4vw;
+}
+
+.quote-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+}
+
+.jumbotron {
+  padding-top: 2vw;
+  padding-bottom: 17vw;
+}
+
+.about-pics img {
+  width: 40vw;
+  margin-left: 30vw;
+  margin-bottom: 8vh;
+}
+
+.about-pics:hover {
+  transform: scale(1.075);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.contact-container section {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 80%;
+  justify-content: space-between;
+  padding-bottom: 8vh;
+}
+
+.testimony_section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+}
+
+.testimony_section p {
+  color: #fff;
+  width: 80%;
+  margin: 5px;
+  font-size: 1.7vw;
+}
+
+.about_testimony_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+  .about-section {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 8vw;
+    width: 84%;
+  }
+
+  .about-section h2 {
+    font-size: 6vw;
+  }
+
+  .about-section p {
+    font-size: 3.2vw;
+  }
+
+  .about_testimony_container {
+    flex-directon: column;
+  }
+
+  .testimony_section {
+    width: 100%;
+  }
+
+  .testimony_section p {
+    font-size: 3vw;
+  }
+
+}
+
+

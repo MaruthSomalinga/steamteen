@@ -1,0 +1,426 @@
+@import 'style.css';
+
+.first-home {
+  background-image: url(switch_img/img3.png);
+}
+
+.reveal-margin {
+  margin-bottom: 7vh;
+}
+
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 4px 1fr;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 1;
+  transition: 0.4s
+}
+
+.timeline__block {
+  margin: 0 20px 20px 20px
+}
+
+
+.date {
+  font-weight: 600;
+}
+
+.date--right { 
+  text-align: right;
+}
+
+.timeline__vbar {
+  position: relative;
+}
+
+.science__timeline .date {
+  color: #8dc63fff;
+}
+
+.science__timeline .timeline__vbar {
+  background: #8dc63fff;
+}
+
+.science__timeline .timeline__circle {
+  background: #8dc63fff;
+}
+
+.science__timeline .timeline__circle--end {
+  background: #8dc63fff;
+}
+
+.science__timeline h2 {
+  color: #8dc63fff;
+}
+
+.tech__timeline .date {
+  color: #F7941E;
+}
+
+.tech__timeline .timeline__vbar {
+  background: #F7941E;
+}
+
+.tech__timeline .timeline__circle {
+  background: #F7941E;
+}
+
+.tech__timeline .timeline__circle--end {
+  background: #F7941E;
+}
+
+.tech__timeline h2 {
+  color: #F7941E;
+}
+
+.eng__timeline .date {
+  color: #FFC809;
+}
+
+.eng__timeline .timeline__vbar {
+  background: #FFC809;
+}
+
+.eng__timeline .timeline__circle {
+  background: #FFC809;
+}
+
+.eng__timeline .timeline__circle--end {
+  background: #FFC809;
+}
+
+.eng__timeline h2 {
+  color: #FFC809;
+}
+
+.art__timeline .date {
+  color: #EF3E3E;
+}
+
+.art__timeline .timeline__vbar {
+  background: #EF3E3E;
+}
+
+.art__timeline .timeline__circle {
+  background: #EF3E3E;
+}
+
+.art__timeline .timeline__circle--end {
+  background: #EF3E3E;
+}
+
+.art__timeline h2 {
+  color: #EF3E3E;
+}
+
+.math__timeline .date {
+  color: #008DD2;
+}
+
+.math__timeline .timeline__vbar {
+  background: #008DD2;
+}
+
+.math__timeline .timeline__circle {
+  background: #008DD2;
+}
+
+.math__timeline .timeline__circle--end {
+  background: #008DD2;
+}
+
+.math__timeline h2 {
+  color: #008DD2;
+}
+
+.timeline__circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.timeline__circle--end {
+  position: absolute;
+  top: initial;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.timeline__block--content {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  transition: 0.4s;
+}
+
+.timeline__block--content:hover {
+  transform: translateY(-5px);
+  transition: 0.4s;
+}
+
+.timeline__block--content .last {
+  margin-bottom: 8vh;
+}
+
+.timeline__block--content h2, .timeline__block--content p {
+  margin: 0;
+}
+
+.timeline__block--content h2 {
+  margin-bottom: 0.2em;
+}
+
+.steam-button__container {
+  width: 70%;
+  display: flex;
+}
+
+.steam-button__container--1 {
+  justify-content: space-between;
+}
+
+.steam-button__container--2 {
+  justify-content: center;
+}
+
+.steam-button__container--2 .btn1 {
+  margin-right: 8%;
+}
+
+.steam-button__container--2 . {
+  margin-right: 10%;
+}
+
+
+.centered__container {
+  margin-left: 21%;
+  margin-top: 8vh;
+}
+
+button.slide-fill {
+  border: none;
+  background: lightgrey;
+  cursor: pointer;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3vw;
+  width: 30%;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  margin-bottom: 5vh;
+}
+
+.slide-fill {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+
+.slide-fill.science::before {
+  background-color: #8dc63fff;
+}
+
+.slide-fill.technology::before {
+  background-color: #F7941E;
+}
+
+.slide-fill.engineering::before {
+  background-color: #FFC809;
+}
+
+.slide-fill.art::before {
+  background-color: #EF3E3E;
+}
+
+.slide-fill.mathematics::before {
+  background-color: #008DD2;
+}
+
+.slide-fill::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.slide-fill:hover::before, .slide-fill:focus::before {
+  transform: scaleY(1);
+  transition: transform 0.5s;
+}
+
+.hiddenTimeline {
+  display: none;
+  opacity: 0;
+  transition: 0.4s
+}
+
+.timeline h2 {
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width: 700px) {
+  .centered__container {
+    margin-left: 8%;
+  }
+
+  .steam-button__container {
+    width: 90%;
+  }
+
+  .steam-button__container button {
+    font-size: 5vw;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+
+  .slide-fill {
+    padding-top: 3vh !important;
+    padding-bottom: 3vh !important;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+
+  .hiddenTimeline {
+    display: none;
+  }
+  
+}
+
+
+.countdown-container {
+  width: 100%;
+  font-family: 'Bebas Neue';
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: #fff;
+  padding-top: 10vh;
+  padding-bottom: 16vh;
+}
+
+@media screen and (min-width: 1400px) {
+  .countdown-container {
+    padding-bottom: 12vh;
+  }
+}
+
+.countdown-container h2 {
+  font-size: 5vw;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.countdown-container h3 {
+  font-size: 3vw;
+  letter-spacing: 2px;
+  transform: translateY(-15px);
+}
+
+.countdown-container div {
+  font-size: 4vw;
+  margin-top: 2vh;
+  letter-spacing: 5px;
+  padding-bottom: 5vh;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .countdown-container h2 {
+    font-size: 14vw;
+  }
+
+  .countdown-container h3 {
+    font-size: 9vw;
+    transform: translateY(-5px);
+  }
+
+  .countdown-container div {
+    font-size: 12vw;
+    margin-top: 2vh;
+    letter-spacing: 5px;
+  }
+  
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+
+  .countdown-container h2 {
+    font-size: 10vw;
+    letter-spacing: 1px;
+  }
+
+  .countdown-container h3 {
+    font-size: 6vw;
+    transform: translateY(-5px);
+  }
+
+  .countdown-container div {
+    font-size: 8vw;
+    margin-top: 2vh;
+    letter-spacing: 5px;
+  }
+  
+}
+
+.caption__wrap {
+  width: 26%;
+  display: flex;
+  justify-content: space-between;
+  display: none;  
+}
+
+small {
+  font-size: 1.5vw;
+}
+
+.reveal1.active1 {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 1s;
+}
+
+.reveal1 {
+  position: relative;
+  transform: translateY(7vh);
+  opacity: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+  .reveal1 {
+  position: relative;
+  transform: translateY(0vh);
+  opacity: 1;
+  }
+
+  
+}

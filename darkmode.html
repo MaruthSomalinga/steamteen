@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    transition: background-color 0.4s ease;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff; /* Light mode default background */
+  }
+
+  body.dark-mode {
+    background-color: #000; /* Dark mode background */
+  }
+
+  .toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  .toggle-circle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+  }
+
+  .sun-icon, .moon-icon {
+    position: absolute;
+    top: 450px;
+    font-size: 24px;
+    color: #f1c40f;
+    transition: opacity 0.4s ease;
+  }
+
+  .sun-icon {
+    opacity: 1;
+  }
+
+  .moon-icon {
+    opacity: 0;
+  }
+
+  input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  input[type="checkbox"]:checked + .toggle-container {
+    background-color: #34495e;
+  }
+
+  input[type="checkbox"]:checked + .toggle-container .toggle-circle {
+    transform: translateX(40px);
+  }
+
+  input[type="checkbox"]:checked + .toggle-container .sun-icon {
+    opacity: 0;
+  }
+
+  input[type="checkbox"]:checked + .toggle-container .moon-icon {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+  <label>
+    <input type="checkbox" id="modeToggle">
+    <div class="toggle-container">
+      <span class="sun-icon">☀️</span>
+      <span class="moon-icon">🌙</span>
+      <div class="toggle-circle"></div>
+    </div>
+  </label>
+
+  <script>
+    const checkbox = document.getElementById('modeToggle');
+    checkbox.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.classList.add('dark-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+      }
+    });
+  </script>
+</body>
+</html>

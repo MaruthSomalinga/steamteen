@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Past Conferences | STEAMTEEN</title>
+    <link href="css/conferences.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="favicon/red.png">
+
+    <style>
+    .page-section {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: auto;
+      height: auto;
+      margin-top: 40px;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .content-wrapper {
+      background-color: #ef3e3e; 
+      display: flex;
+      margin-top: 40px;
+      width: 100%;
+      max-width: 100%;
+      gap: 20px;
+      justify-content: space-between;
+      min-height: 600px;
+    }
+
+    @media (max-width: 991px) {
+      .content-wrapper {
+        max-width: 100%;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+    }
+
+    .left-sidebar {
+      background-color: #ff6969;
+      width: 100%;
+      max-width: 67px;
+      height: 100%;
+      min-height: 1350px;
+    }
+
+    @media (max-width: 991px) {
+      .left-sidebar {
+        display: none;
+      }
+    }
+
+    .sidebar-line {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-left: 23.5px;
+      height: 100%;
+      width: 20px;
+      background-color: #fff;
+      min-height: 1350px;
+    }
+
+    .main-content {
+      align-self: start;
+      display: flex;
+      margin-top: -82px;
+      flex-direction: column;
+      width: auto;
+      height: 100%;
+      min-height: 900px;
+    }
+
+    @media (max-width: 991px) {
+      .main-content {
+        width: 100%;
+      }
+    }
+
+    .profile-circle {
+      background-color: #ff6969; 
+      border-radius: 50%;
+      align-self: center;
+      z-index: 0;
+      width: 224px;
+      height: 230px;
+      margin: 50px 350px 0;
+    }
+
+    .profile-image-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      min-height: 100px;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .profile-image-wrapper {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      min-height: 100px;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      align-self: stretch;
+      flex-grow: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .profile-image {
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: center;
+      width: 140px;
+      height: 140px;
+      overflow: hidden;
+      margin: 0px 0 0 5px;
+    }
+
+    .content-area {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1000px;
+      width: 1000px;
+      min-height: 600px;
+      height: 100%;
+      margin-top: -50px;
+      padding-top: 100px;
+    }
+
+    @media (max-width: 991px) {
+      .content-area {
+        max-width: 100%;
+      }
+    }
+
+    .right-sidebar {
+      background-color: #ff6969; 
+      width: 100%;
+      max-width: 67px;
+      height: 100%;
+      min-height: 1350px;
+    }
+
+    @media (max-width: 991px) {
+      .right-sidebar {
+        display: none;
+      }
+    }
+
+    .sidebar-line-right {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-left: 23.5px;
+      height: 100%;
+      width: 20px;
+      background-color: #fff;
+      min-height: 1350px;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="first-home preloadImg">
+      <div class="nav-wrap">
+        <nav> 
+          <div class="logo">
+            <h4 class="title-logo"><a href="index.html">SteamTeen</a></h4>
+          </div>
+          <ul class="nav__links nav__links2">
+            <li><a href="about.html">About</a></li>
+            <li><a href="tracks.html">Tracks</a></li>
+            <li><a href="conferences.html">Conferences</a></li>
+             <li><a href="faqs.html">FAQs</a></li>
+             <li><a href="jobs.html">Jobs</a></li>
+          </ul>
+          <!--burger menu-->
+          <div class=" burger burger2">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Past <br> Conferences</h1>
+        <button class="sign-up red-bg" id="signup1">Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Embedded HTML for Background design -->
+    <section class="page-section">
+      <div class="content-wrapper">
+        <aside class="left-sidebar">
+          <div class="sidebar-line"></div>
+        </aside>
+        <main class="main-content">
+          <div class="profile-circle">
+            <div class="profile-image-container">
+              <div class="profile-image-wrapper">
+                <img loading="lazy" src="https://cdn.builder.io/o/assets%2Fb6e626ecc91d46778ca30d0fa07d951c%2F8d12afec8b6940a39c631312723926dd%2Fcompressed?apiKey=b6e626ecc91d46778ca30d0fa07d951c&token=8d12afec8b6940a39c631312723926dd&alt=media&optimized=true" class="profile-image" alt="Profile image" />
+              </div>
+            </div>
+          </div>
+          <div class="content-area">
+            <div class="reveal-margin">
+            <div class="reveal1">
+              <!-- buttons to display timelines -->
+            <div class="centered__container">
+              <div class="steam-button__container--1 steam-button__container">
+                <button class="slide-fill science" id="scienceBtn">2021</button>
+                <button class="slide-fill technology" id="technologyBtn">2022</button>
+                <button class="slide-fill engineering" id="engineeringBtn">2023</button>
+              </div>
+            </div>
+
+            <!-- 2019 Timeline -->
+            <div class="timeline science__timeline reveal1" id="scienceTimeline">
+
+              <div class="timeline__block hidden-mobile reveal1">
+                <div class="date date--right">July 5th, 2021</div>
+              </div>
+              <div class="timeline__vbar hidden-mobile">
+                <div class="timeline__circle hidden-mobile"></div>
+              </div>
+              <div class="timeline__block timeline__block--content reveal1">
+                <h2>Friday Events</h2>
+                <p>Paper Airplane Design Challenge, Pixel Art Challenge, Careers in STEAM Panel Discussion, and Math as Art Workshop.</p>
+              </div>
+
+              <div class="timeline__block timeline__block--content reveal1">
+                <h2>Saturday Events</h2>
+                <p>Intro to App Development Workshop, Combining Art & Engineering Panel, Modern Math Guest Speaker, and Late Night Astronomy Workshop.</p>
+              </div>
+              <div class="timeline__vbar hidden-mobile">
+                <div class="timeline__circle hidden-mobile"></div>
+              </div>
+              <div class="timeline__block hidden-mobile reveal1">
+                <div class="date">July 6th, 2021</div>
+              </div>
+
+              <div class="timeline__block hidden-mobile  reveal1">
+                <div class="date date--right">July 8th, 2021</div>
+              </div>
+              <div class="timeline__vbar hidden-mobile">
+                <div class="timeline__circle hidden-mobile"></div>
+                <div class="timeline__circle--end hidden-mobile"></div>
+              </div>
+              <div class="timeline__block timeline__block--content reveal1">
+                <h2>Sunday Events</h2>
+                <p>Neurology Discussion, Straw-Bridge Creation Competition, Website Design Challenge, and Cybersecurity Guest Speaker.</p>
+              </div>
+
+
+
+            </div>
+
+              <!-- 2020 Timeline -->
+            <div class="timeline tech__timeline hiddenTimeline reveal1" id="techTimeline">
+
+                <div class="timeline__block timeline__block--content reveal1">
+                  <h2>Friday Events</h2>
+                  <p>Women in STEM Guest Speaker, Intro to Website Development, and Dragster Design Workshop.</p>
+              </div>
+              <div class="timeline__vbar hidden-mobile">
+                <div class="timeline__circle"></div>
+              </div>
+              <div class="timeline__block hidden-mobile reveal1">
+                <div class="date">July 10th, 2022</div>
+              </div>
+
+              <div class="timeline__block hidden-mobile reveal1">
+                <div class="date date--right reveal1">July 11th, 2022</div>
+              </div>
+              <div class="timeline__vbar hidden-mobile">
+                <div class="timeline__circle"></div>
+              </div>
+              <div class="timeline__block timeline__block--content reveal1">
+                <h2>Saturday Events</h2>
+                <p>Website Design Challenge, Civil Engineering Workshop, Digital Bob Ross Painting, and Marine Biology Guest Speaker.</p>
+              </div>
+
+
+              <div class="timeline__block timeline__block--content reveal1">
+                <h2>Sunday Events</h2>
+                <p>Mathematics Trivia, 21st Century Technological Ethics Discussion, Titration Experiment, and Combining Art & Engineering Panel.</p>
+              </div>
+              <div class="timeline__vbar hidden-mobile">
+                <div class="timeline__circle hidden-mobile"></div>
+                <div class="timeline__circle--end hidden-mobile"></div>
+              </div>
+              <div class="timeline__block hidden-mobile reveal1">
+                <div class="date reveal1">July 12th, 2022</div>
+              </div>
+            </div>
+
+              <!-- 2022 Timeline -->
+            <div class="timeline eng__timeline hiddenTimeline" id="engTimeline">
+
+              <div class="timeline__block hidden-mobile reveal1">
+                <div class="date date--right">July 9th, 2023</div>
+              </div>
+              <div class="timeline__vbar hidden-mobile">
+                <div class="timeline__circle"></div>
+              </div>
+              <div class="timeline__block timeline__block--content reveal1">
+                <h2>Friday Events</h2>
+                <p>Introduction to Engineering Design, Computer Science Principles, Picasso and Geometry, and Writing Scientific Journals.</p>
+              </div>
+
+              <div class="timeline__block timeline__block--content reveal1">
+                <h2>Saturday Events</h2>
+                <p>Introduction to Robotics, People of Color in STEAM Panel, Paper Airplane Challenge, and Advanced Algebra Principles.</p>
+              </div>
+              <div class="timeline__vbar hidden-mobile">
+                <div class="timeline__circle"></div>
+              </div>
+              <div class="timeline__block hidden-mobil reveal1e">
+                <div class="date">July 10th, 2023</div>
+              </div>
+
+              <div class="timeline__block hidden-mobile reveal1">
+                <div class="date date--right">July 11th, 2023</div>
+              </div>
+              <div class="timeline__vbar hidden-mobile">
+                <div class="timeline__circle"></div>
+                <div class="timeline__circle--end hidden-mobile"></div>
+              </div>
+              <div class="timeline__block timeline__block--content last reveal1">
+                <h2>Sunday Events</h2>
+                <p>Cardiology Medical Case, Introduction to Astronomy, Pediatrician Guest Speaker, and Color by Number.</p>
+              </div>
+
+            </div>
+            </div>
+            </div>
+          </div>
+        </main>
+        <aside class="right-sidebar">
+          <div class="sidebar-line-right"></div>
+        </aside>
+      </div>
+    </section>
+
+  <!-- <div class="reveal-margin">
+  <div class="reveal1">
+    <!-- buttons to display timelines --
+  <div class="centered__container">
+    <div class="steam-button__container--1 steam-button__container">
+      <button class="slide-fill science" id="scienceBtn">2021</button>
+      <button class="slide-fill technology" id="technologyBtn">2022</button>
+      <button class="slide-fill engineering" id="engineeringBtn">2023</button>
+    </div>
+  </div>
+
+  <!-- 2019 Timeline --
+  <div class="timeline science__timeline reveal1" id="scienceTimeline">
+    
+    <div class="timeline__block hidden-mobile reveal1">
+      <div class="date date--right">July 5th, 2021</div>
+    </div>
+    <div class="timeline__vbar hidden-mobile">
+      <div class="timeline__circle hidden-mobile"></div>
+    </div>
+    <div class="timeline__block timeline__block--content reveal1">
+      <h2>Friday Events</h2>
+      <p>Paper Airplane Design Challenge, Pixel Art Challenge, Careers in STEAM Panel Discussion, and Math as Art Workshop.</p>
+    </div>
+
+    <div class="timeline__block timeline__block--content reveal1">
+      <h2>Saturday Events</h2>
+      <p>Intro to App Development Workshop, Combining Art & Engineering Panel, Modern Math Guest Speaker, and Late Night Astronomy Workshop.</p>
+    </div>
+    <div class="timeline__vbar hidden-mobile">
+      <div class="timeline__circle hidden-mobile"></div>
+    </div>
+    <div class="timeline__block hidden-mobile reveal1">
+      <div class="date">July 6th, 2021</div>
+    </div>
+
+    <div class="timeline__block hidden-mobile  reveal1">
+      <div class="date date--right">July 8th, 2021</div>
+    </div>
+    <div class="timeline__vbar hidden-mobile">
+      <div class="timeline__circle hidden-mobile"></div>
+      <div class="timeline__circle--end hidden-mobile"></div>
+    </div>
+    <div class="timeline__block timeline__block--content reveal1">
+      <h2>Sunday Events</h2>
+      <p>Neurology Discussion, Straw-Bridge Creation Competition, Website Design Challenge, and Cybersecurity Guest Speaker.</p>
+    </div>
+
+    
+
+  </div>
+
+    <!-- 2020 Timeline --
+  <div class="timeline tech__timeline hiddenTimeline reveal1" id="techTimeline">
+
+      <div class="timeline__block timeline__block--content reveal1">
+        <h2>Friday Events</h2>
+        <p>Women in STEM Guest Speaker, Intro to Website Development, and Dragster Design Workshop.</p>
+    </div>
+    <div class="timeline__vbar hidden-mobile">
+      <div class="timeline__circle"></div>
+    </div>
+    <div class="timeline__block hidden-mobile reveal1">
+      <div class="date">July 10th, 2022</div>
+    </div>
+    
+    <div class="timeline__block hidden-mobile reveal1">
+      <div class="date date--right reveal1">July 11th, 2022</div>
+    </div>
+    <div class="timeline__vbar hidden-mobile">
+      <div class="timeline__circle"></div>
+    </div>
+    <div class="timeline__block timeline__block--content reveal1">
+      <h2>Saturday Events</h2>
+      <p>Website Design Challenge, Civil Engineering Workshop, Digital Bob Ross Painting, and Marine Biology Guest Speaker.</p>
+    </div>
+
+
+    <div class="timeline__block timeline__block--content reveal1">
+      <h2>Sunday Events</h2>
+      <p>Mathematics Trivia, 21st Century Technological Ethics Discussion, Titration Experiment, and Combining Art & Engineering Panel.</p>
+    </div>
+    <div class="timeline__vbar hidden-mobile">
+      <div class="timeline__circle hidden-mobile"></div>
+      <div class="timeline__circle--end hidden-mobile"></div>
+    </div>
+    <div class="timeline__block hidden-mobile reveal1">
+      <div class="date reveal1">July 12th, 2022</div>
+    </div>
+  </div>
+
+    <!-- 2022 Timeline --
+  <div class="timeline eng__timeline hiddenTimeline" id="engTimeline">
+    
+    <div class="timeline__block hidden-mobile reveal1">
+      <div class="date date--right">July 9th, 2023</div>
+    </div>
+    <div class="timeline__vbar hidden-mobile">
+      <div class="timeline__circle"></div>
+    </div>
+    <div class="timeline__block timeline__block--content reveal1">
+      <h2>Friday Events</h2>
+      <p>Introduction to Engineering Design, Computer Science Principles, Picasso and Geometry, and Writing Scientific Journals.</p>
+    </div>
+
+    <div class="timeline__block timeline__block--content reveal1">
+      <h2>Saturday Events</h2>
+      <p>Introduction to Robotics, People of Color in STEAM Panel, Paper Airplane Challenge, and Advanced Algebra Principles.</p>
+    </div>
+    <div class="timeline__vbar hidden-mobile">
+      <div class="timeline__circle"></div>
+    </div>
+    <div class="timeline__block hidden-mobil reveal1e">
+      <div class="date">July 10th, 2023</div>
+    </div>
+
+    <div class="timeline__block hidden-mobile reveal1">
+      <div class="date date--right">July 11th, 2023</div>
+    </div>
+    <div class="timeline__vbar hidden-mobile">
+      <div class="timeline__circle"></div>
+      <div class="timeline__circle--end hidden-mobile"></div>
+    </div>
+    <div class="timeline__block timeline__block--content last reveal1">
+      <h2>Sunday Events</h2>
+      <p>Cardiology Medical Case, Introduction to Astronomy, Pediatrician Guest Speaker, and Color by Number.</p>
+    </div>
+
+  </div>
+  </div>
+  </div> -->
+
+  <section class="countdown-container blue-bg">
+    <h2 class="reveal1">STEAMTEEN 2024</h2>
+    <h3 class="reveal1 coming-soon">Coming Soon</h3>
+    <div class="reveal1 countdown-time">00 : 00 : 00 : 00</div>
+    <div class="caption__wrap">
+      <small>Days</small>
+      <small>Hours</small>
+      <small>Minutes</small>
+      <small>Seconds</small>
+    </div>
+  </section>
+
+    <div id="signUpModal1" class="modal modal5">
+      <div class="modal-content">
+        <div class="modal-header red-bg">
+          <span class="closeBtn" id="closeBtn20">&times;</span>
+          <h4>Sign Up | STEAMTEEN 2024</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://forms.gle/s1eoW8zbHazYDuNa9" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/conferences.js"></script>
+    <script src="js/countdown.js"></script>
+    <script>// buttons ids
+let scienceBtn = document.getElementById('scienceBtn');
+let techBtn = document.getElementById('technologyBtn');
+let engBtn = document.getElementById('engineeringBtn');
+let artBtn = document.getElementById('artBtn');
+let mathBtn = document.getElementById('mathematicsBtn');
+
+// timeline variable
+let scienceTimeline = document.getElementById('scienceTimeline');
+let techTimeline = document.getElementById('techTimeline');
+let engTimeline = document.getElementById('engTimeline');
+let artTimeline = document.getElementById('artTimeline');
+let mathTimeline = document.getElementById('mathTimeline');
+
+scienceBtn.addEventListener('click', () => {
+  scienceTimeline.classList.remove('hiddenTimeline');
+  techTimeline.classList.add('hiddenTimeline');
+  engTimeline.classList.add('hiddenTimeline');
+  artTimeline.classList.add('hiddenTimeline');
+  mathTimeline.classList.add('hiddenTimeline');
+});
+
+techBtn.addEventListener('click', () => {
+  scienceTimeline.classList.add('hiddenTimeline');
+  techTimeline.classList.remove('hiddenTimeline');
+  engTimeline.classList.add('hiddenTimeline');
+  artTimeline.classList.add('hiddenTimeline');
+  mathTimeline.classList.add('hiddenTimeline');
+});
+
+engBtn.addEventListener('click', () => {
+  scienceTimeline.classList.add('hiddenTimeline');
+  techTimeline.classList.add('hiddenTimeline');
+  engTimeline.classList.remove('hiddenTimeline');
+  artTimeline.classList.add('hiddenTimeline');
+  mathTimeline.classList.add('hiddenTimeline');
+});
+
+artBtn.addEventListener('click', () => {
+  scienceTimeline.classList.add('hiddenTimeline');
+  techTimeline.classList.add('hiddenTimeline');
+  engTimeline.classList.add('hiddenTimeline');
+  artTimeline.classList.remove('hiddenTimeline');
+  mathTimeline.classList.add('hiddenTimeline');
+});
+
+mathBtn.addEventListener('click', () => {
+  scienceTimeline.classList.add('hiddenTimeline');
+  techTimeline.classList.add('hiddenTimeline');
+  engTimeline.classList.add('hiddenTimeline');
+  artTimeline.classList.add('hiddenTimeline');
+  mathTimeline.classList.remove('hiddenTimeline');
+});
+
+
+// modal variable to call
+var signup1 = document.getElementById("signUpModal1");
+
+// modal open button variable to call
+var signup1Btn = document.getElementById("signup1");
+
+// closeBtn variable to call
+var closeBtn5 = document.getElementById("closeBtn20");
+
+// event listener for modal click/open
+signup1Btn.addEventListener('click', openModal20);
+
+// event lsitener to for close btn to close
+closeBtn5.addEventListener('click', closeModal20);
+
+// event listener fore click outside modal
+window.addEventListener('click', outsideModal20);
+
+// opens modal  on screen
+function openModal20() {
+  signup1.style.display = "block";
+}
+
+// hides modal on screen when x button is clicked
+function closeModal20() {
+  signup1.style.display = "none";
+}
+
+// hides modal on screen when there is click outside of modal
+function outsideModal20(clickLocation) {
+  if (clickLocation.target == signup1) {
+    signup1.style.display = "none";
+  }
+}</script>
+    
+  </body>
+
+ <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .footer {
+                background-color: #232f3e;
+                color: #fff;
+                padding: 20px 0;
+                font-size: 14px;
+                line-height: 1.6;
+                text-align: center;
+            }
+            .footer-content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            .footer-section {
+                flex: 1;
+                max-width: 250px;
+                margin-bottom: 20px;
+                text-align: center; /* Center align the content within each footer section */
+            }
+            .footer-section h3 {
+                color: #b0b0b0;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .footer-section ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                text-align: center; /* Center align the list items within each footer section */
+            }
+            .footer-section ul li {
+                margin-bottom: 8px;
+            }
+            .footer-section ul li a {
+                color: #b0b0b0;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            .footer-section ul li a:hover {
+                color: #fff;
+            }
+            .footer-bottom {
+                margin-top: 20px;
+                padding-top: 10px;
+                border-top: 1px solid #44505c;
+                text-align: center; /* Center align the content in the footer bottom */
+            }
+            .footer-bottom p {
+                margin: 5px 0;
+            }
+            .footer-bottom p a {
+                color: #b0b0b0;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            .footer-bottom p a:hover {
+                color: #fff;
+            }
+            .social-icons {
+                margin-top: 10px;
+                text-align: center; /* Center align the social icons */
+            }
+            .social-icons a {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background-color: #44505c;
+                color: #fff;
+                font-size: 18px;
+                text-align: center;
+                line-height: 30px;
+                border-radius: 5
+                  \
+                  0%;
+                margin: 0 5px;
+                transition: background-color 0.3s;
+            }
+            .social-icons a:hover {
+                background-color: #007bff;
+            }
+        </style>
+
+            </head>
+            <body>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Get to Know Us</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="tracks.html">Tracks</a </li>
+                            <li><a href="conferences.html">Conferences</a></li>
+                            <li><a href="faqs.html">FAQS</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Connect with Us</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/@steamteen123">Youtube</a></li>
+                            <li><a href="https://x.com/steamteen2022">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/steamteenct/?img_index=1">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Want to work?</h3>
+                        <ul>
+                            <li><a href="jobs.html">Job Offerings</a></li>
+                            <li><a href="tracks.html">Past Experiences</a></li>
+                            <li><a href="jobs.html">Super Secret Quiz</a></li>
+                            <li><a href="conferences.html">Upcoming Conference</a></li>
+                            <li><a href="tracks.html">Past Speakers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Let Us Help You</h3>
+                        <ul>
+                            <li><a href="faqs.html">FAQs</a></li>
+                            <li><a href="https://forms.gle/pmcD11qN6R671yYF7">Registration</a></li>
+                            <li><a href="tracks.html">Tracks</a></li>
+                            <li><a href="index.html">Past Conferences</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; <span id="currentYear"></span> STEAMTEEN. All rights reserved.</p>
+                    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank">f</a>
+                        <a href="#" target="_blank">t</a>
+                        <a href="#" target="_blank">i</a>
+                    </div>
+                </div>
+            </div>
+            </body>
+            </html>
+
+            <script src="js/script.js"></script>
+          </body>
+</html>
